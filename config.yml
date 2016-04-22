@@ -1,0 +1,27 @@
+# SEO settings
+title: Xiaofeng Qu's Julia Blog
+description: "Xiaofeng Qu's Blog in Julia and Machine Learning"
+keywords: "Xiaofeng Qu, homepage, blog"
+
+# Site settings
+url: /home/rubydev/Codes/baozi-test/
+plugins: assets/plugins
+
+# baseurl: ""
+
+# Author settings
+author:
+  name      : Xiaofeng Qu
+  job       : Ph.D. Candidate
+  bio       : "Working for the Ph.D."
+  thumb     : /images/author.jpg
+  email     : quxiaofeng@live.com
+  url       : http://quxiaofeng.me
+  github    : http://github.com/quxiaofeng
+  facebook  : http://facebook.com/quxiaofeng
+
+# google_analytics: UA-52446115-1
+# repo: http://github.com/nandomoreirame/dotX
+
+# comments
+# disqus_shortname: "fernandomoreira"

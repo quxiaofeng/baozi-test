@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>RevealJS</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="../assets/plugins/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../assets/plugins/reveal/css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../assets/plugins/reveal/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports 
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../assets/plugins/reveal/css/print/pdf.css' : '../assets/plugins/reveal/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>-->
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+          processEscapes: true
+        },
+        TeX: {
+          equationNumbers: {
+            autoNumber: 'AMS'
+          }
+        },
+        "HTML-CSS": {
+          imageFont: null
+        }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+      <section>
+<h1>Baozi</h1>
+<h2>Static Site Generator in pure Julia</h2>
+</section>
+<section>
+<h1></h1>
+<h3>Hello</h3>
+<p>Baozi is a static site generator written in pure <a href="http://julialang.org">Julia</a>.This package offers both APIs and generator script.And it supports revealjs slides, as you see.</p>
+</section>
+<section data-background="#DAA520" id="slide-manual">
+<h1>Slide Manual</h1>
+</section>
+<section data-background="#DAA520" id="slide-manual">
+<h1></h1>
+<p>you can use <code>&#123;&#125;</code> to tweak the frames&#39; attributes,eg. background color.</p>
+<pre><code>&#123;id&#61;slide-manual,data-background&#61;#DAA520&#125;</code></pre>
+</section>
+<section>
+<h1></h1>
+<h3>you can use LaTeX</h3>
+<pre><code class="language-LaTeX">&#36;&#36;
+\begin&#123;aligned&#125;
+expr1 &amp;&#61; a&#43;b&#43;\sqrt&#123;2&#125;\\
+expr2 &amp;&#61; c&#43;d
+\end&#123;aligned&#125;
+&#36;&#36;</code></pre>
+</section>
+<section>
+<h1></h1>
+&#36;&#36;\begin&#123;aligned&#125;
+expr1 &amp;&#61; a&#43;b&#43;\sqrt&#123;2&#125;\\
+expr2 &amp;&#61; c&#43;d
+\end&#123;aligned&#125;&#36;&#36;
+
+</section>
+      </div>
+
+    </div>
+
+    <script src="../assets/plugins/reveal/lib/js/head.min.js"></script>
+    <script src="../assets/plugins/reveal/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../assets/plugins/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../assets/plugins/reveal/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../assets/plugins/reveal/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../assets/plugins/reveal/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../assets/plugins/reveal/zoom-js/zoom.js', async: true },
+          { src: '../assets/plugins/reveal/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
