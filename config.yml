@@ -4,10 +4,10 @@ description: "Xiaofeng Qu's Blog in Julia and Machine Learning"
 keywords: "Xiaofeng Qu, homepage, blog"
 
 # Site settings
-url: /home/rubydev/Codes/baozi-test/
+url: http://www.quxiaofeng.me/baozi-test
 plugins: assets/plugins
 
-# baseurl: ""
+baseurl: /baozi-test
 
 # Author settings
 author:
